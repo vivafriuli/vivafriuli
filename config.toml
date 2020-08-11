@@ -1,6 +1,7 @@
 baseurl = "https://vivafriuli.github.io/"  # Include trailing slash
 title = "Manuel ¡Viva El Friuli!"
 theme = "newsroom"
+languageCode = "es"
 author = "Weru"
 
 copyright = "Copyright © 2019, Weru and the Hugo Authors; all rights reserved."
