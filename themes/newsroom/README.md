@@ -11,8 +11,8 @@ This is a simple, minimalistic theme, which is inspired by [Apple's Newsroom pag
 * Responsive
 * Deeplinks
 * Dark Mode
-* Supports native lazy loading of images
-* Syntax highlighting 
+* Supports native lazy loading of images & iframes
+* Syntax highlighting
 
 ### Deeplinks
 
@@ -50,17 +50,19 @@ Today, operating systems have a system-wide __light ~ dark mode__ switch. Your w
 
 ![Dark Mode](https://github.com/onweru/newsroom/blob/master/images/screenshot-dark.png)
 
+#### How do I disable dark mode?
+
+Under `params` add `disableDarkMode = true` to your `config.toml` file. If your site is based on the exampleSite, the value is already included; you only need to uncomment it.
+
+> ⚠️ If you disable darkmode, the UI control for toggling darkmode will remain in place. This way, the user can decide which mode they would like to use while browsing your website
+
 ### Custom 404 Page
 
-| Normal Mode | Dark Mode |
-|--- | ---|
-| ![404 page](https://github.com/onweru/newsroom/blob/master/images/404.png) | ![404 page on dark Mode](https://github.com/onweru/newsroom/blob/master/images/404-dark.png)|
+![404 page](https://github.com/onweru/newsroom/blob/master/images/404.png)
 
 ### Syntax highlighting
 
-| Normal Mode | Dark Mode |
-|--- | ---|
-| ![404 page](https://github.com/onweru/newsroom/blob/master/images/syntax.png) | ![404 page on dark Mode](https://github.com/onweru/newsroom/blob/master/images/syntax-dark.png)|
+![404 page](https://github.com/onweru/newsroom/blob/master/images/syntax.png) 
 
 If you wish, you can opt to [use Chroma](./exampleSite/config.toml#L17-L27).
 
@@ -83,7 +85,7 @@ This theme ships with __2 custom shortcodes__ (they both use positional paramete
 
 1. __Video__
     This shortcode can be used to embed a youtube video with custom styling. It takes a solo positional parameter.
-    
+
     ```
     ...
     {{< video "youtubeVideoID" >}}
@@ -93,8 +95,7 @@ This theme ships with __2 custom shortcodes__ (they both use positional paramete
 2. __Picture__
     You want to use darkmode images when darkmode is enabled on a device and a regular image on lightmode? It takes 3 positional parameter
 
-    Store these images in the `static/images` directory. 
-    
+    Store these images in the `static/images` directory.
     ```
     ...
     {{< picture "lightModeImage.png" "darkModeImage.png" "Image alt text" >}}
@@ -103,8 +104,9 @@ This theme ships with __2 custom shortcodes__ (they both use positional paramete
 
 ## From the same creator
 
-1. [Swift Theme](https://github.com/onweru/hugo-swift-theme)
+1. [Clarity Theme](https://github.com/chipzoller/hugo-clarity)
 2. [Compose Theme](https://github.com/onweru/compose)
+3. [Swift Theme](https://github.com/onweru/hugo-swift-theme)
 
 ## License
 
