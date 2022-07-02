@@ -227,7 +227,7 @@
     }
   });
 
-  const copyToClipboard = str => {
+  function copyToClipboard(str) {
     // Create a <textarea> element
     const el = createEl('textarea');
     // Set its value to the string that you want copied
@@ -251,7 +251,7 @@
       document.getSelection().removeAllRanges();    // Unselect everything on the HTML document
       document.getSelection().addRange(selected);   // Restore the original selection
     }
-  }
+  };
 
   (function copyHeadingLink() {
     let deeplink = 'link';
