@@ -1,4 +1,4 @@
-baseurl = "https://vivafriuli.github.io/"  # Include trailing slash
+baseurl = "https://vivafriuli.github.io"  # Include trailing slash
 title = "Manuel ¡Viva El Friuli!"
 theme = "newsroom"
 languageCode = "es"
