@@ -1,7 +1,7 @@
 ---
 title: "Burning Love"
 date: 2020-10-09T00:23:10-04:00
-draft: true
+draft: false
 image: "burninglove.jpg"
 ---
 
